@@ -1,3 +1,5 @@
 cp ./house/earthquake_listed_houses.geojson ../public/mapData/
 cp ./house/150.json ../public/chartData/
+cp ./flood/floods.json ../public/chartData/148.json
+cp ./flood/floods-history.json ../public/historyData/148.json
 cp ./flood/floods.geojson ../public/mapData/

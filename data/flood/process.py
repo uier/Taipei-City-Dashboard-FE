@@ -32,7 +32,10 @@ for j in jsons:
                 features.append(feature)
             chart_data[row["deep"]][row["region"]] += 1
 
-chart_data2 = [{"name": f"{k} cm", "data": [chart_data[k][v] for v in regions]} for k in sorted(chart_data.keys())]
+chart_data2 = [
+    {"name": f"{k} cm", "data": [chart_data[k][v] for v in regions]}
+    for k in sorted(chart_data.keys())
+]
 json.dump(
     {
         "type": "FeatureCollection",
@@ -41,4 +44,4 @@ json.dump(
     open("./floods.geojson", "w"),
     ensure_ascii=False,
 )
-json.dump({ "data": chart_data2}, open("./floods.json", "w"))
+json.dump({"data": chart_data2}, open("./floods.json", "w"))

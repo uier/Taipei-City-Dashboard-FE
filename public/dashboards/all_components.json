@@ -4173,6 +4173,7 @@
 			},
 			"name": "歷史積水紀錄",
 			"source": "水利處",
+			"history_data": true,
 			"time_from": null,
 			"time_to": null,
 			"short_desc": "",
