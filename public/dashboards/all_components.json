@@ -4124,9 +4124,7 @@
 				}
 			],
 			"chart_config": {
-				"types": [
-					"BarChart"
-				],
+				"types": ["BarChart"],
 				"color": [
 					"case",
 					[">=", ["get", "deep"], 40],
@@ -4168,7 +4166,9 @@
 			"long_desc": "",
 			"use_case": "",
 			"tags": [],
-			"links": ["https://heovcenter.gov.taipei/TpeFloodRecord/Query.aspx"],
+			"links": [
+				"https://heovcenter.gov.taipei/TpeFloodRecord/Query.aspx"
+			],
 			"contributors": []
 		},
 		"149": {
@@ -4199,6 +4199,44 @@
 					"name": "建築物"
 				}
 			],
+			"source": "都發局建管處",
+			"links": [
+				"https://data.taipei/dataset/detail?id=f98010ed-281d-4334-9596-ca7d740cc06f"
+			],
+			"contributors": ["tuic"]
+		},
+		"150": {
+			"id": 150,
+			"index": "earthquake_listed_houses",
+			"map_config": [
+				{
+					"index": "earthquake_listed_houses",
+					"property": [
+						{
+							"key": "address",
+							"name": "地點"
+						}
+					],
+					"type": "symbol",
+					"icon": "triangle_white",
+					"title": "建築物"
+				}
+			],
+			"chart_config": {
+				"types": ["PictogramChart"],
+				"icon": "home",
+				"color": "#f5cac3",
+				"unit": "棟"
+			},
+			"name": "地震列管建築物",
+			"time_from": null,
+			"time_to": null,
+			"update_freq": null,
+			"update_freq_unit": null,
+			"short_desc": "顯示當前全市921、331地震列管黃單需注意之建築物數量",
+			"long_desc": "顯示當前全市921、331地震列管黃單需注意之建築物數量。資料來源為都發局建管處，不定期更新。",
+			"use_case": "藉由顯示剩餘列管建築物數量，可掌握全市目前有居住安全隱憂的地點。",
+			"tags": [],
 			"source": "都發局建管處",
 			"links": [
 				"https://data.taipei/dataset/detail?id=f98010ed-281d-4334-9596-ca7d740cc06f"

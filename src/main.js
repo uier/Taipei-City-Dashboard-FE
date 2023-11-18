@@ -22,6 +22,7 @@ import VueApexCharts from "vue3-apexcharts";
 
 // Import Global Components
 import DistrictChart from "./components/charts/DistrictChart.vue";
+import PictogramChart from "./components/charts/PictogramChart.vue";
 import DonutChart from "./components/charts/DonutChart.vue";
 import BarChart from "./components/charts/BarChart.vue";
 import TreemapChart from "./components/charts/TreemapChart.vue";
@@ -44,6 +45,7 @@ app.use(pinia);
 app.use(VueApexCharts);
 
 app.component("DistrictChart", DistrictChart);
+app.component("PictogramChart", PictogramChart);
 app.component("DonutChart", DonutChart);
 app.component("BarChart", BarChart);
 app.component("TreemapChart", TreemapChart);
