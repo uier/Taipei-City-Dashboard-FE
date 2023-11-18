@@ -4077,6 +4077,40 @@
 				"https://github.com/tpe-doit/YouBike-Optimization"
 			],
 			"contributors": ["tuic"]
+		},
+		"149": {
+			"id": 149,
+			"index": "earthquake_listed_houses",
+			"map_config": [
+				{
+					"index": "earthquake_listed_houses",
+					"property": [
+						{
+							"key": "address",
+							"name": "地點"
+						}
+					],
+					"type": "symbol",
+					"icon": "triangle_white",
+					"title": "建築物"
+				}
+			],
+			"name": "地震列管建築物",
+			"chart_config": {
+				"types": ["MapLegend"]
+			},
+			"chart_data": [
+				{
+					"type": "symbol",
+					"icon": "triangle_white",
+					"name": "建築物"
+				}
+			],
+			"source": "都發局建管處",
+			"links": [
+				"https://data.taipei/dataset/detail?id=f98010ed-281d-4334-9596-ca7d740cc06f"
+			],
+			"contributors": ["tuic"]
 		}
 	}
 }

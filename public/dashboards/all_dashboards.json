@@ -3,7 +3,7 @@
 		{
 			"name": "韌性城市",
 			"index": "resilience-city",
-			"components": ["148"],
+			"components": [],
 			"icon": "home"
 		},
 		{
@@ -75,7 +75,8 @@
 				"9",
 				"16",
 				"30",
-				"106"
+				"106",
+				"149"
 			],
 			"icon": "public"
 		}
