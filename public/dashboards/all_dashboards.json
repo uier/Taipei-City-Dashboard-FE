@@ -1,6 +1,12 @@
 {
 	"data": [
 		{
+			"name": "韌性城市",
+			"index": "resilience-city",
+			"components": ["148"],
+			"icon": "home"
+		},
+		{
 			"name": "YouBike研究",
 			"index": "youbike",
 			"components": ["60", "142", "143", "144", "145", "146", "147"],
