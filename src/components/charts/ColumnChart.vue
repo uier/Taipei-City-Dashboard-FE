@@ -28,7 +28,10 @@ const chartOptions = ref({
 	},
 	plotOptions: {
 		bar: {
-			borderRadius: 5,
+			borderRadius:
+				props.chart_config.barBorderRadius === undefined
+					? 5
+					: props.chart_config.barBorderRadius,
 		},
 	},
 	stroke: {

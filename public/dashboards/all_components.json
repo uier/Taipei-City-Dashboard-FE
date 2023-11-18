@@ -4108,6 +4108,10 @@
 							"name": "發生日期"
 						},
 						{
+							"key": "region",
+							"name": "行政區"
+						},
+						{
 							"key": "descript",
 							"name": "地址"
 						},
@@ -4120,7 +4124,7 @@
 							"name": "積水面積 (m²)"
 						}
 					],
-					"title": "淹水深度"
+					"title": "積水處"
 				}
 			],
 			"chart_config": {
@@ -4138,9 +4142,7 @@
 					"大安區",
 					"文山區"
 				],
-				"types": [
-					"ColumnChart"
-				],
+				"types": ["ColumnChart", "DistrictChart"],
 				"color": [
 					"#0c6293",
 					"#1180ad",
@@ -4150,6 +4152,7 @@
 					"#86ffff"
 				],
 				"unit": "次",
+				"barBorderRadius": 0,
 				"map_filter": [
 					"region",
 					[
@@ -4168,9 +4171,9 @@
 					]
 				]
 			},
-			"name": "淹水",
-			"source": "資訊局",
-			"time_from": "2023-07-28T00:00:00+08:00",
+			"name": "歷史積水紀錄",
+			"source": "水利處",
+			"time_from": null,
 			"time_to": null,
 			"short_desc": "",
 			"long_desc": "",
