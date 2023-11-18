@@ -20,4 +20,3 @@ for y in years:
                 print(f"File {f['filename']}.kml downloaded successfully.")
         else:
             print(f"Failed to download file {f['filename']}.kml")
-    
