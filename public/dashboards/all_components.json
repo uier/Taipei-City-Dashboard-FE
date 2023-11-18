@@ -4078,6 +4078,99 @@
 			],
 			"contributors": ["tuic"]
 		},
+		"148": {
+			"id": 148,
+			"index": "floods",
+			"map_config": [
+				{
+					"index": "floods",
+					"type": "fill",
+					"paint": {
+						"fill-color": [
+							"case",
+							[">=", ["get", "deep"], 40],
+							"#03045e",
+							[">=", ["get", "deep"], 35],
+							"#023e8a",
+							[">=", ["get", "deep"], 30],
+							"#0077b6",
+							[">=", ["get", "deep"], 25],
+							"#48acd3",
+							[">=", ["get", "deep"], 20],
+							"#90e0ef",
+							"#caf0f8"
+						],
+						"fill-opacity": 0.8
+					},
+					"property": [
+						{
+							"key": "occur_dt",
+							"name": "發生日期"
+						},
+						{
+							"key": "descript",
+							"name": "地址"
+						},
+						{
+							"key": "deep",
+							"name": "積水深度 (cm)"
+						},
+						{
+							"key": "area",
+							"name": "積水面積 (m²)"
+						}
+					],
+					"title": "淹水深度"
+				}
+			],
+			"chart_config": {
+				"types": [
+					"BarChart"
+				],
+				"color": [
+					"case",
+					[">=", ["get", "deep"], 40],
+					"#03045e",
+					[">=", ["get", "deep"], 35],
+					"#023e8a",
+					[">=", ["get", "deep"], 30],
+					"#0077b6",
+					[">=", ["get", "deep"], 25],
+					"#48acd3",
+					[">=", ["get", "deep"], 20],
+					"#90e0ef",
+					"#caf0f8"
+				],
+				"unit": "cm",
+				"map_filter": [
+					"region",
+					[
+						"北投",
+						"士林",
+						"內湖",
+						"南港",
+						"松山",
+						"信義",
+						"中山",
+						"大同",
+						"中正",
+						"萬華",
+						"大安",
+						"文山"
+					]
+				]
+			},
+			"name": "淹水",
+			"source": "資訊局",
+			"time_from": "2023-07-28T00:00:00+08:00",
+			"time_to": null,
+			"short_desc": "",
+			"long_desc": "",
+			"use_case": "",
+			"tags": [],
+			"links": ["https://heovcenter.gov.taipei/TpeFloodRecord/Query.aspx"],
+			"contributors": []
+		},
 		"149": {
 			"id": 149,
 			"index": "earthquake_listed_houses",

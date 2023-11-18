@@ -1,1 +1,2 @@
 cp ./house/earthquake_listed_houses.geojson ../public/mapData/
+cp ./flood/floods.geojson ../public/mapData/
