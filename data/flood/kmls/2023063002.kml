@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="2023063002">
+  <name>2023063002</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>2023063002</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>0</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>0</td>
+</tr>
+<tr>
+<td>123</td>
+<td>230</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#PolyStyle00</styleUrl>
+      <MultiGeometry>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 121.5263268624924,25.09413107697226,0 121.5259314030389,25.09529669848157,0 121.5258950281372,25.09528997211821,0 121.5262882395367,25.09411224297451,0 121.5263268624924,25.09413107697226,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 121.526620674249,25.09366944588374,0 121.5262936269439,25.09536277825542,0 121.526249893874,25.09535696668071,0 121.5265707615063,25.09366729341876,0 121.526620674249,25.09366944588374,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 121.5269086973035,25.09369505986529,0 121.5265949600629,25.09543854359834,0 121.5265241556039,25.09541850587806,0 121.5268326397906,25.0936778401489,0 121.5269086973035,25.09369505986529,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 121.5272604633004,25.0937381091455,0 121.5269182044926,25.09551172632281,0 121.526827886196,25.09548159226521,0 121.5271844057875,25.09371227957915,0 121.5272604633004,25.0937381091455,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+        <Polygon>
+          <extrude>0</extrude>          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 121.5261891631197,25.09572835268298,0 121.5261779209524,25.0957887109285,0 121.5258461912727,25.09573803861125,0 121.5258574334399,25.09567768034071,0 121.5261891631197,25.09572835268298,0</coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>99eb6540</color>
+      <width>0.400000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>99e65c00</color>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>

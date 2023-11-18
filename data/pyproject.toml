@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "codefest"
+version = "0.1.0"
+description = ""
+authors = ["TzuWei <ap9940506@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kml2geojson = "^5.1.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
