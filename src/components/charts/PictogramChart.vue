@@ -85,6 +85,21 @@ const scale = computed(() => {
 		grid-template-columns: repeat(10, 1fr);
 		grid-template-rows: repeat(10, 1fr);
 		font-size: var(--font-l);
+
+		> span {
+			// Assuming each grid item is a span
+			animation: ease-in 0.2s forwards; // Apply the animation, adjust duration as needed
+			opacity: 0;
+		}
+
+		// Generate staggered animations for each item
+		@for $i from 1 through 100 {
+			// Adjust the number based on your grid size
+			> span:nth-child(#{$i}) {
+				animation-delay: $i *
+					0.01s; // Stagger the delay, adjust timing as needed
+			}
+		}
 	}
 }
 
@@ -92,7 +107,6 @@ const scale = computed(() => {
 	0% {
 		opacity: 0;
 	}
-
 	100% {
 		opacity: 1;
 	}
