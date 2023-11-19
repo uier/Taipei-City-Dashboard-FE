@@ -11,6 +11,9 @@ const props = defineProps([
 ]);
 
 const scale = computed(() => {
+	if (props.series.data.length > 0) {
+		return 1;
+	}
 	for (let i = 1; i <= 10000; i *= 10) {
 		if (props.series.data / i < 100) {
 			return i;
@@ -18,13 +21,19 @@ const scale = computed(() => {
 	}
 	return 10000;
 });
+const sum = computed(() => {
+	return props.series.data.reduce((a, b) => a + b, 0);
+});
 </script>
 
 <template>
 	<div v-if="activeChart === 'PictogramChart'">
 		<div class="pictogramchart">
 			<div class="pictogramchart-topbar">
-				<h5 class="pictogramchart-title">
+				<h5 class="pictogramchart-title" v-if="series.data.length > 0">
+					{{ `${series.name}` }}
+				</h5>
+				<h5 class="pictogramchart-title" v-else>
 					{{ `${series.name} ${series.data} ${chart_config.unit}` }}
 				</h5>
 				<h6 class="pictogramchart-legend" v-if="scale > 1">
@@ -33,8 +42,48 @@ const scale = computed(() => {
 					}}</span>
 					{{ ` = ${scale} ${chart_config.unit}` }}
 				</h6>
+				<h6
+					class="pictogramchart-catelegend"
+					v-if="chart_config.categories"
+				>
+					<div
+						v-for="(cate, index) in chart_config.categories"
+						:key="cate"
+						:style="{
+							display: flex,
+							alignItems: center,
+							marginRight:
+								index === chart_config.categories.length - 1
+									? '0'
+									: '12px',
+						}"
+					>
+						<span
+							:style="{
+								fontFamily: 'var(--font-icon)',
+								color: chart_config.color[index],
+							}"
+							>{{ chart_config.icon }}</span
+						>
+						{{ `${cate}${chart_config.unit}` }}
+					</div>
+				</h6>
 			</div>
-			<div class="pictogramchart-content">
+			<div class="pictogramchart-content" v-if="series.data.length > 0">
+				<template v-for="(val, index) in series.data" :key="val">
+					<span
+						v-for="i in Math.round((val / sum) * 100)"
+						:key="i"
+						:style="{
+							color: chart_config.color[index],
+							fontFamily: 'var(--font-icon)',
+						}"
+					>
+						{{ chart_config.icon }}
+					</span>
+				</template>
+			</div>
+			<div class="pictogramchart-content" v-else>
 				<span
 					v-for="i in series.data"
 					:key="i"
@@ -77,6 +126,11 @@ const scale = computed(() => {
 	&-legend {
 		font-size: var(--font-s);
 		font-weight: 400;
+	}
+
+	&-catelegend {
+		display: flex;
+		align-items: center;
 	}
 
 	&-content {
