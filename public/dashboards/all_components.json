@@ -4256,6 +4256,90 @@
 				"https://data.taipei/dataset/detail?id=f98010ed-281d-4334-9596-ca7d740cc06f"
 			],
 			"contributors": ["tuic"]
+		},
+		"151": {
+			"id": 151,
+			"index": "hospitals",
+			"map_config": [
+				{
+					"index": "hospitals",
+					"paint": {
+						"circle-color": "#ebebeb",
+						"circle-radius": [
+							"interpolate",
+							["linear"],
+							["to-number", ["get", "bed_count"]],
+							0,
+							2.5,
+							50,
+							1,
+							10000,
+							50
+						]
+					},
+					"type": "circle",
+					"property": [
+						{
+							"key": "bed_count",
+							"name": "急性一般病床數"
+						}
+					],
+					"title": "病床",
+					"icon": null
+				}
+			],
+			"chart_config": {
+				"categories": [
+					"北投區",
+					"士林區",
+					"內湖區",
+					"南港區",
+					"松山區",
+					"信義區",
+					"中山區",
+					"大同區",
+					"中正區",
+					"萬華區",
+					"大安區",
+					"文山區"
+				],
+				"types": ["ColumnChart", "DistrictChart"],
+				"color": [
+					"#ebebeb",
+					"#86ffff"
+				],
+				"unit": "床數",
+				"barBorderRadius": 0,
+				"map_filter": [
+					"dist",
+					[
+						"北投區",
+						"士林區",
+						"內湖區",
+						"南港區",
+						"松山區",
+						"信義區",
+						"中山區",
+						"大同區",
+						"中正區",
+						"萬華區",
+						"大安區",
+						"文山區"
+					]
+				]
+			},
+			"name": "公私立醫院病床數統計",
+			"source": "衛生局",
+			"time_from": null,
+			"time_to": null,
+			"short_desc": "",
+			"long_desc": "",
+			"use_case": "",
+			"tags": [],
+			"links": [
+				"https://data.taipei/dataset/detail?id=57080dc5-98da-4b5e-8f37-b10ca14d6ca2"
+			],
+			"contributors": []
 		}
 	}
 }
