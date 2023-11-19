@@ -1,7 +1,7 @@
 import json
 import requests
 
-years = ["110", "111"]
+years = ["108", "109"]
 data_root = "./kmls"
 
 for y in years:

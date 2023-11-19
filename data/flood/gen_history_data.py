@@ -24,6 +24,8 @@ class Flood:
 
 
 raw_files = [
+    "flood-108.json",
+    "flood-109.json",
     "flood-110.json",
     "flood-111.json",
     "flood-112.json",

@@ -15,7 +15,7 @@ regions = [
     "大安區",
     "文山區",
 ]
-jsons = ["flood-110", "flood-111", "flood-112"]
+jsons = ["flood-108", "flood-109", "flood-110", "flood-111", "flood-112"]
 features = []
 chart_data = defaultdict(lambda: defaultdict(int))
 
@@ -25,7 +25,7 @@ for j in jsons:
         for row in d["Result"]:
             keys = {"deep", "area", "year"}
             for k in keys:
-                row[k] = int(float(row[k]))
+                row[k] = None if row[k] == '' else int(float(row[k]))
             fs = json.load(open(f"./geojsons/{row['filename']}.geojson"))["features"]
             for feature in fs:
                 feature["properties"] = row
