@@ -4409,6 +4409,22 @@
 			"update_freq_unit": null,
 			"contributors": ["tuic"]
 		},
+		"154": {
+			"id": 154,
+			"index": "burn",
+			"history_data": false,
+			"map_config": null,
+			"chart_config": {
+				"color": ["#FD5696"],
+				"types": ["TimelineSeparateChart"],
+				"unit": "件"
+			},
+			"name": "火災",
+			"source": "消防局",
+			"links": [],
+			"tags": [],
+			"contributors": []
+		},
 		"155": {
 			"id": 155,
 			"index": "building_age_picto",

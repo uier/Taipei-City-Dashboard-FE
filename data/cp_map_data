@@ -9,5 +9,6 @@ cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_l
 cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster2.geojson
 cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster3.geojson
 cp ./fire/153.json ../public/chartData/
+cp ./burn/burn.json ../public/chartData/154.json
 cp ./age/building_age_picto.geojson ../public/mapData/
 cp ./age/155.json ../public/chartData/
