@@ -4304,12 +4304,10 @@
 					"文山區"
 				],
 				"types": ["ColumnChart", "DistrictChart"],
-				"color": [
-					"#ebebeb",
-					"#86ffff"
-				],
+				"color": ["#ebebeb", "#86ffff"],
 				"unit": "床數",
 				"barBorderRadius": 0,
+				"oneSerie": true,
 				"map_filter": [
 					"dist",
 					[

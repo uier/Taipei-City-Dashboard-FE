@@ -33,7 +33,10 @@ for hospital in raw_data:
     new_hospital = HospitalChartData(
         name=hospital["機構名稱"],
         address=hospital["地址"],
-        bed_count=int(hospital["急性一般病床數"]),
+        bed_count=sum(
+            [int(v) for k, v in hospital.items() if "床數" in k]
+            # int(hospital["急性一般病床數"])
+		),
         dist=dist,
         latitude=float(xy_row["y"]),
         longitude=float(xy_row["x"]),
@@ -83,7 +86,6 @@ json.dump(
     {
         "data": [
             {"name": "急性一般病床數", "data": chart_data},
-            {"name": "dummy", "data": [0 for _ in regions]},
         ]
     },
     open("./hospitals.json", "w"),
