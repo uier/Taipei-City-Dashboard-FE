@@ -8,3 +8,4 @@ cp ./hospital/hospitals.geojson ../public/mapData/
 cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster1.geojson
 cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster2.geojson
 cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster3.geojson
+cp ./fire/153.json ../public/chartData/

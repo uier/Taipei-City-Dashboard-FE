@@ -4239,7 +4239,7 @@
 			"chart_config": {
 				"types": ["PictogramChart"],
 				"icon": "home",
-				"color": "#f5cac3",
+				"color": "#d6d469",
 				"unit": "棟"
 			},
 			"name": "地震列管建築物",
@@ -4339,8 +4339,8 @@
 			],
 			"contributors": []
 		},
-		"152": {
-			"id": 152,
+		"153": {
+			"id": 153,
 			"index": "fire_respondent_cluster",
 			"map_config": [
 				{
@@ -4381,16 +4381,26 @@
 				}
 			],
 			"chart_config": {
-				"types": ["MapLegend"]
+				"categories": [
+					"北投區",
+					"士林區",
+					"內湖區",
+					"南港區",
+					"松山區",
+					"信義區",
+					"中山區",
+					"大同區",
+					"中正區",
+					"萬華區",
+					"大安區",
+					"文山區"
+				],
+				"types": ["DistrictChart", "ColumnChart"],
+				"color": ["#f5cac3"],
+				"unit": "個",
+				"barBorderRadius": 0,
+				"oneSerie": true
 			},
-			"chart_data": [
-				{
-					"type": "circle",
-					"color": "#3f51b5",
-					"name": "消防栓",
-					"value": null
-				}
-			],
 			"name": "火災應變設施",
 			"source": "消防局",
 			"time_from": null,
