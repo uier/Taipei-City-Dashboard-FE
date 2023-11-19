@@ -175,6 +175,8 @@ export const useMapStore = defineStore("map", {
 			this.map.addSource(`${map_config.layerId}-source`, {
 				type: "geojson",
 				data: { ...data },
+				cluster: map_config.cluster ?? false,
+				clusterMaxZoom: map_config.clusterMaxZoom ?? 14,
 			});
 			if (map_config.type === "arc") {
 				this.AddArcMapLayer(map_config, data);

@@ -4338,6 +4338,66 @@
 				"https://data.taipei/dataset/detail?id=57080dc5-98da-4b5e-8f37-b10ca14d6ca2"
 			],
 			"contributors": []
+		},
+		"152": {
+			"id": 152,
+			"index": "fire_respondent_cluster",
+			"map_config": [
+				{
+					"index": "fire_hydrant_location_cluster1",
+					"filter": ["has", "point_count"],
+					"type": "circle",
+					"title": "消防栓",
+					"size": "small",
+					"icon": "step",
+					"cluster": true,
+					"clusterMaxZoom": 14
+				},
+				{
+					"index": "fire_hydrant_location_cluster2",
+					"type": "symbol",
+					"filter": ["has", "point_count"],
+					"icon": "text",
+					"cluster": true,
+					"clusterMaxZoom": 14
+				},
+				{
+					"index": "fire_hydrant_location_cluster3",
+					"type": "circle",
+					"filter": ["!", ["has", "point_count"]],
+					"property": [
+						{
+							"key": "type",
+							"name": "類型"
+						},
+						{
+							"key": "location",
+							"name": "位置"
+						}
+					],
+					"icon": "conditional",
+					"cluster": true,
+					"clusterMaxZoom": 14
+				}
+			],
+			"chart_config": {
+				"types": ["MapLegend"]
+			},
+			"chart_data": [
+				{
+					"type": "circle",
+					"color": "#3f51b5",
+					"name": "消防栓",
+					"value": null
+				}
+			],
+			"name": "火災應變設施",
+			"source": "消防局",
+			"time_from": null,
+			"time_to": null,
+			"update_freq": null,
+			"update_freq_unit": null,
+			"contributors": ["tuic"]
 		}
 	}
 }

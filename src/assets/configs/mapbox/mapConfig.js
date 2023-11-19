@@ -195,6 +195,30 @@ export const maplayerCommonPaint = {
 			7,
 		],
 	},
+	"circle-step": {
+		"circle-color": [
+			"step",
+			["get", "point_count"],
+			"#51bbd6",
+			100,
+			"#f1f075",
+			750,
+			"#f28cb1",
+		],
+		"circle-radius": ["step", ["get", "point_count"], 20, 100, 30, 750, 40],
+	},
+	"circle-conditional": {
+		// "circle-color": [
+		// 	"step",
+		// 	["get", "point_count"],
+		// 	"#3f51b5",
+		// 	2,
+		// 	"transparent",
+		// ],
+		"circle-radius": ["step", ["get", "point_count"], 2, 2, 0],
+		"circle-color": "#3f51b5",
+		// "circle-radius": 4,
+	},
 	"fill-extrusion": {
 		"fill-extrusion-opacity": 0.5,
 	},
@@ -239,6 +263,9 @@ export const maplayerCommonPaint = {
 		"line-dasharray": [2, 4],
 	},
 	symbol: {},
+	"symbol-text": {
+		"text-color": "#000",
+	},
 };
 
 // Layout Properties
@@ -357,5 +384,10 @@ export const maplayerCommonLayout = {
 			22,
 			60,
 		],
+	},
+	"symbol-text": {
+		"text-field": ["get", "point_count_abbreviated"],
+		"text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+		"text-size": 12,
 	},
 };

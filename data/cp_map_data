@@ -5,3 +5,6 @@ cp ./flood/floods-history.json ../public/historyData/148.json
 cp ./flood/floods.geojson ../public/mapData/
 cp ./hospital/hospitals.json ../public/chartData/151.json
 cp ./hospital/hospitals.geojson ../public/mapData/
+cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster1.geojson
+cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster2.geojson
+cp ./fire/fire_hydrant_location_cluster.geojson ../public/mapData/fire_hydrant_location_cluster3.geojson
